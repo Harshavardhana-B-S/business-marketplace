@@ -242,3 +242,53 @@
     margin-left: 20px;
     font-size: 20px;
 }
+
+
+/* Business card css */
+.foodContainer {
+    border: 2px solid lightgray;
+    width: 340px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 18px;
+    /* box-shadow: 1px  1px 3px 0px ; */
+  }
+  
+  .foodContainer h3,
+  h4 {
+    margin: 4px 0;
+  }
+  
+  
+  .imgSrc {
+    width: 100%;
+    border-radius: 18px;
+  }
+  
+  .cardItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .must-try{
+    padding: 4px 12px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+  }
+  
+  .imgBox{
+    position: relative;
+  }
+  
+  .d-none{
+    display: none;
+  }
+
+  .foodContainer p, h3, h4 {
+    color: white;
+  }
