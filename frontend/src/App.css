@@ -244,6 +244,7 @@
 }
 
 
+
 /* Business card css */
 .foodContainer {
     border: 2px solid lightgray;
@@ -292,3 +293,9 @@
   .foodContainer p, h3, h4 {
     color: white;
   }
+
+.addFooter{
+    /* border: 1px solid blue; */
+    margin-top: 180px;
+}
+

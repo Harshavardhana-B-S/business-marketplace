@@ -1,4 +1,5 @@
 const Contact =require("../model/contactModel");
+const addBusiness= require("../model/addBusiness")
 
 //Create Contact --- Admin
 exports.createContact=async(req,res,next)=>{
@@ -21,6 +22,14 @@ exports.getAllContact= async(req,res)=>{
     });
 }
 
+// Get addBussiness
+exports.createBusiness= async(req,res,next)=>{
+   const addBuss= await  addBusiness.create(req.body);
+   res.status(201).json({
+    success:true,
+    addBuss
+})
+}
 
 
 

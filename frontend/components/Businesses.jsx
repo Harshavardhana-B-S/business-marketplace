@@ -48,21 +48,21 @@ function Businesses() {
     method: 'GET',
     headers: {
       'X-RapidAPI-Key': 'd92c2e35afmsh7c1c8e51f88a51ep1bfce7jsn58ff5dee75c3',
-      'X-RapidAPI-Host': 'local-businesses-by-outscraper.p.rapidapi.com'
+      'X-RapidAPI-Host': 'local-businesses-by-outscraper.p.rapidapi.com',
     },
   }
   let url =
     'https://local-businesses-by-outscraper.p.rapidapi.com/maps/search-v2?query=software%2C%20NY%2C%20USA&limit=20&skipPlaces=0&language=en&region=US'
 
-    useEffect(() => {
-      async function getData() {
-        await fetch(url,options)
-          .then((res) => res.json())
-          .then((data) => setUser(data));
-      }
-      getData();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+  useEffect(() => {
+    async function getData() {
+      await fetch(url, options)
+        .then((res) => res.json())
+        .then((data) => setUser(data))
+    }
+    getData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   console.log(user)
 
   return (
@@ -74,16 +74,18 @@ function Businesses() {
         </h1>
       </div>
       <div className='cardItems'>
-        {user && user.length > 0 && user.map((item) => {
-          return (
-            <BusinessCard
-              name={item.name}
-              full_address={item.full_address}
-              city={item.city}
-              rating={item.rating}
-            />
-          )
-        })}
+        {user &&
+          user.length > 0 &&
+          user.map((item) => {
+            return (
+              <BusinessCard
+                name={item.name}
+                full_address={item.full_address}
+                city={item.city}
+                rating={item.rating}
+              />
+            )
+          })}
       </div>
     </div>
   )
