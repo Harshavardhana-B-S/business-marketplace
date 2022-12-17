@@ -50,3 +50,19 @@
     color: #BEBAC4;
     object-fit:cover;
 }
+
+
+.heroCard{
+    /* border: 1px solid cyan; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.heroDescribe{
+    font-size: 70px;
+    line-height: 115%;
+    font-weight: 900;
+    color: white;
+}
