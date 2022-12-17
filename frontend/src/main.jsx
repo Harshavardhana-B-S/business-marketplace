@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
+import Businesses from '../components/Businesses'
+import BusinessCard from '../components/BusinessCard'
+import AddBusiness from '../components/AddBusiness'
 
 
 const router = createBrowserRouter([
@@ -13,7 +16,20 @@ const router = createBrowserRouter([
   {
     path:"/contact",
     element: <ContactForm />,
-  }
+  },
+  {
+    path:"/businesses",
+    element: <Businesses />,
+  },
+  {
+    path:"/businesscard",
+    element: <BusinessCard />,
+  },
+  {
+    path:"/addbusiness",
+    element: <AddBusiness />,
+  },
+  
 ]);
 
 

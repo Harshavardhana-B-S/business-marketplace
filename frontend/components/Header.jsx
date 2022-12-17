@@ -18,8 +18,8 @@ const Header = () => {
 
         <div className='navLinks'>
           <Link to='/' className='link-btn'>Home</Link>
-          <Link to='./contact' className='link-btn'>Business</Link>
-          <Link to='./contact' className='link-btn'>Add Business</Link>
+          <Link to='./businesses' className='link-btn'>Business</Link>
+          <Link to='./addbusiness' className='link-btn'>Add Business</Link>
           <Link to='./contact' className='link-btn'>Contact</Link>
         </div>
 
