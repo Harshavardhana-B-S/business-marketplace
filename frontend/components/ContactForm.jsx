@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Axios from "axios";
+import axios from "axios";
 import Header from './Header'
 import Footer from './Footer'
 
@@ -32,7 +32,7 @@ export default function ContactForm() {
 		};
 		try {
 			const body = JSON.stringify(newContact);
-			await Axios.post("/contacts", body, config);
+			await axios.post("http://localhost:4000/api/v1/contacts", body, config);
 			setFormData({
 				name: "",
 				email: "",
