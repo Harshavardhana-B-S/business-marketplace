@@ -1,21 +1,55 @@
 import React from 'react'
 
-function Footer()  {
+function Footer() {
   return (
     <>
+    <hr className='hr' />
       <div className='footer'>
-        <hr />
+        <div>
+          <img src="./assests/logo50.png" alt="" className='bg-[#5645bd]' />
+        </div>
 
-      <img src="./assests/logo50.png" alt="" className='bg-[#5645bd]' />
+        <div className='footerDetails' id='Resources'>
+          <h3>Resources</h3>
+          <p>Docs<br />
+            Download Desktop App<br />
+            Security<br />
+            Terms of Service<br />
+            Privacy Policy</p>
+        </div>
 
-      <div className='footerDetails'>
-            <h3>Resources</h3>      
-            
-      </div>
-        
-      </div>
        
-      
+
+
+
+        
+        <div className='footerDetails' id='Company'>
+          <h3> Company</h3>
+          <p>Careers<br />
+          Contact Us<br />
+          Blog<br/>
+          </p>
+        </div>
+
+        
+        <div className='footerDetails' id='findUs'>
+          <h3>Find us</h3>
+          <p>LinkedIn<br />
+          YouTube<br />
+          Twittery<br />
+          Discord<br />
+          </p>
+        </div>
+
+         <div>
+         </div>
+      </div>
+          
+
+          <div className='copyRights'>
+               <h3>©2022 Business Gram, Inc.</h3>
+          </div>
+
     </>
   )
 }
