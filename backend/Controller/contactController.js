@@ -10,5 +10,19 @@ exports.createContact=async(req,res,next)=>{
     })
 }
 
+//Get All product details
+exports.getAllContact= async(req,res)=>{
+    
+    const contact= await Contact.find();
+
+    res.status(200).json({
+        success:true,
+        contact
+    });
+}
+
+
+
+
 
 
