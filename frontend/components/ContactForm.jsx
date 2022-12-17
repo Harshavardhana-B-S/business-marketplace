@@ -9,25 +9,24 @@ export default function ContactForm() {
   const [message,setMessage] = useState('')
 
 
-  async function registerUser(event) {
+   function registerUser(event) {
     event.preventDefault()
-    const response = await fetch('http://localhost:1337/api/register', {
+    const response =  fetch('http://localhost:4000/api/v1//contacts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, email, message }),
-    })
-
-    const data = await response.json()
-    console.log(data)
+      // body: JSON.stringify({ name, email, message }),
+    }).then((res) => res.json()).catch(err => console.log(err))
+    
+    
   }
 
   return (
     <div>
       <main className='  h-screen items-center flex justify-center  '>
         <form
-          onSubmit={registerUser}
+          
           className='bg-white flex  w-1/2 border-white border-2  '
         >
           <div className='flex-1 text-gray-700  p-20'>
@@ -95,6 +94,7 @@ export default function ContactForm() {
               <button
                 type='submit'
                 className='bg-[#3AACD9] text-sm text-white py-3 mt-6 rounded-lg w-full'
+                onClick={registerUser}
               >
                 Submit 
               </button>
