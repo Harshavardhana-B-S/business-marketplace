@@ -6,6 +6,7 @@
     padding: 0px;
     background-color: #0f0e11;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 .Banner {
@@ -13,28 +14,31 @@
     color: white;
     text-align: center;
     background-color: #5645bd;
-    padding: 5px;
+    padding: 8px;
     font-family: 'Roboto', sans-serif;
 }
 
 .navBarContainer {
     /* border: 1px solid cyan; */
     margin: 0 auto;
+    margin-top: 10px;
     width: 90%;
     color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .navBarLogo {
     display: flex;
-    font-size: 25px;
     align-items: center;
+}
 
-
+.navBarLogo h2 {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 35px;
 }
 
 .navBarLogo img {
@@ -48,21 +52,78 @@
     margin-left: 50px;
     font-size: 18px;
     color: #BEBAC4;
-    object-fit:cover;
+    object-fit: cover;
+}
+
+.heroImg {
+    /* border: 1px solid blue; */
+    /* padding: 10px; */
+    width: 55%;
+    display: flex;
+    /* height: 70%; */
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+.heroImg img {
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-left: 180px;
+    /* border-radius: 50px; */
+}
+
+.rotateEarth {
+    animation-name: animated-it;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.rotateEarth {
+    animation-name: earth-rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 
-.heroCard{
+.heroCard {
     /* border: 1px solid cyan; */
     width: 90%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 15px;
     padding: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+
 }
 
-.heroDescribe{
-    font-size: 70px;
+.heroDescribe h1 {
+    font-size: 65px;
     line-height: 115%;
-    font-weight: 900;
+    font-weight: 800;
     color: white;
+    letter-spacing: 1px;
+}
+
+.heroDescribe h2 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 12%, rgba(86, 69, 189, 1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+    margin-top: 55px;
+    font-weight: 800;
+    /* letter-spacing: 1.5px; */
+}
+
+@keyframes earth-rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
 }
