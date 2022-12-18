@@ -11,22 +11,22 @@ import AddBusiness from '../components/AddBusiness'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App to='/home' />,
   },
   {
-    path:"/contact",
+    path:"/home/contact",
     element: <ContactForm />,
   },
   {
-    path:"/businesses",
+    path:"/home/businesses",
     element: <Businesses />,
   },
   {
-    path:"/businesscard",
+    path:"/home/businesscard",
     element: <BusinessCard />,
   },
   {
-    path:"/addbusiness",
+    path:"/home/addbusiness",
     element: <AddBusiness />,
   },
   

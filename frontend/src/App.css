@@ -35,6 +35,8 @@
     align-items: center;
 }
 
+
+
 .navBarLogo {
     display: flex;
     align-items: center;
@@ -247,11 +249,13 @@
 
 /* Business card css */
 .foodContainer {
-    border: 2px solid lightgray;
+    /* border: 2px solid lightgray; */
+    color:cornsilk;
     width: 340px;
     padding: 10px;
     margin: 20px;
     border-radius: 18px;
+    background-color: #19181C;
     /* box-shadow: 1px  1px 3px 0px ; */
   }
   
@@ -262,7 +266,7 @@
   
   
   .imgSrc {
-    width: 100%;
+    width: 50%;
     border-radius: 18px;
   }
   
@@ -292,7 +296,12 @@
 
   .foodContainer p, h3, h4 {
     color: white;
+    /* background-color: #19181C; */
+    
   }
+  /* .foodContainer{
+    background-color: #19181C;
+  } */
 
 .addFooter{
     /* border: 1px solid blue; */
